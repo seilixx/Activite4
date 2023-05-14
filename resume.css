@@ -1,0 +1,133 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #081b29;
+}
+
+h1 {
+  color: #fff;
+}
+h2 {
+  color: #fff;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  list-style: none;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+.nav * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a {
+  position: relative;
+  color: rgba(205, 207, 205, 0.5);
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.nav a:before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #00abf0;
+  border-top: 3px solid #00abf0;
+  -webkit-transform: translate(-100%, 50%);
+  transform: translate(-100%, 50%);
+}
+.nav a:after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #00abf0;
+  border-bottom: 3px solid #00abf0;
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+}
+.nav a:hover:before,
+.nav a:hover:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+.container_etud {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_etud_second,
+.container_etud_first {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.box img {
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+}
+.sec {
+  margin: -15px;
+  font-weight: 650;
+  opacity: 0.8;
+}
+.seco {
+  font-weight: 500;
+  opacity: 0.5;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: #ffff;
+  letter-spacing: 2.5px;
+}
+
+footer {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}

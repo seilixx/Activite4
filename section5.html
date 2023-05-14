@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./section5.css">
+    <title>Chapitre 5</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+          <li><a href="./resume.html">HOME</a></li>
+          <li><a href="./section1.html">Section 1</a></li>
+          <li><a href="./section2.html">Section 2</a></li>
+          <li><a href="./section3.html">Section 3</a></li>
+          <li><a href="./section4.html">Section 4</a></li>
+          <li><a href="./section5.html">Section 5</a></li>
+        </ul>
+      </div>
+    <header>
+        <a href="#" class="logo">Chapitre 5 </a>
+        <nav class="navigation">
+            <a href="#services">à propos de  Git & github</a>
+            <a href="#projects">liens</a>
+            <a href="#Binome">Binome</a>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <div>
+            <h1>Git & Github<br><span>Apprenons à les connaître</span></h1>
+            <h3>Allons-y</h3>
+            <a href="#projects" class="main-btn">Avoir plus</a>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-brands fa-github"></i></a>
+                <a href="#"><i class="fab fa-brands fa-git"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">git & github</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-brands fa-git"></i>
+                </div>
+                <div class="info">
+                    <h3> c'est quoi git ?
+                    </h3>
+                    <p>Git est un logiciel de versioning créé en 2005 par Linus Torvalds, le créateur de Linux. Il permet de conserver un historique des modifications effectuées sur un projet, ce qui facilite grandement la gestion de projets et permet de travailler en équipe de manière beaucoup plus efficace. En tant que leader incontesté des logiciels de gestion de versions, Git est indispensable pour tout développeur. Les systèmes de gestion de version sont devenus incontournables aujourd'hui en raison de leur capacité à faciliter la gestion de projets.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class=" fas fa-solid fa-user"></i>
+                </div>
+                <div class="info">
+                    <h3>À quoi ça sert ?
+                    </h3>
+                    <p>Le système de gestion de version est utilisé pour faciliter la collaboration entre plusieurs développeurs travaillant sur un même projet. Il permet de coordonner le travail en conservant l'historique des modifications effectuées sur des fichiers et en permettant à différentes versions d'un même fichier de coexisterGit est un exemple de logiciel de versioning avec de nombreuses fonctionnalités supplémentaires très utiles. Voici quelques exemples concrets d'utilisation d'un système de gestion de version :
+                        _Développement de logiciels.
+                        _Gestion de contenu Web.
+                        _Collaboration sur des projets de documentation.
+                     </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-solid fa-code-branch"></i>
+                </div>
+                <div class="info">
+                    <h3>Modèle centralisé vs modèle décentralisé </h3>
+                    <p>Il existe deux modèles de logiciels de gestion de version : le modèle centralisé et le modèle décentralisé. Dans le modèle centralisé, le code source est hébergé sur un serveur distant central, tandis que dans le modèle décentralisé, chaque utilisateur héberge l'intégralité du code source du projet sur sa propre machine. Le modèle décentralisé a été popularisé par Git et présente plusieurs avantages, notamment la simplicité et la flexibilité du travail, ainsi qu'une sécurité accrue grâce à la possibilité d'utiliser la copie du projet d'un utilisateur comme back-up en cas de corruption du serveur central</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class=" fab fa-brands fa-github"></i>
+                </div>
+                <div class="info">
+                    <h3>C'est quoi Github ? </h3>
+                    <p>Plateforme de collaboration et de partage pour les projets de développement de logiciels. GitHub permet aux développeurs de travailler ensemble sur des projets, de publier et de partager des codes sources, de signaler des problèmes et de collaborer pour trouver des solutions. Il offre également des fonctionnalités telles que la gestion des problèmes, le suivi des problèmes, la documentation, les intégrations et la gestion des autorisations pour aider les équipes de développement à travailler efficacem</p>
+                </div>
+            </div>
+           
+            <div class="card">
+                <div class="icon">
+                    <i class=" fas fa-solid fa-file"></i>
+                </div>
+                <div class="info">
+                    <h3>Les états des fichiers </h3>
+                    <p>Dans Git, un fichier peut être soit "suivi" s'il appartient au dernier instantané capturé, soit "non suivi" s'il n'a pas été indexé. Lors du démarrage d'un dépôt, tous les fichiers sont non suivis et doivent être indexés et validés. Les fichiers suivis peuvent avoir l'état "modifié", "indexé" ou "validé". Un fichier est considéré comme "modifié" tant qu'il n'a pas été indexé, et il est indexé lorsqu'on indique à Git qu'il doit faire partie du prochain instantané. Lorsqu'on prend l'instantané, les fichiers faisant partie de celui-ci sont considérés comme validés et le cycle recommence.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="info">
+                    <h3>La gestion des informations selon Git </h3>
+                    <p>Parlons du fonctionnement de Git en tant que système de gestion de version qui considère les données sous forme d'instantanés ou "snapshots". À chaque enregistrement de l'état d'un projet dans Git, il crée un instantané du contenu de l'espace de travail et stocke une référence à cet instantané dans une base de données locale. Cette base de données permet de disposer de l'historique complet d'un projet localement, ce qui rend la plupart des opérations de Git rapides et faciles à réaliser sans avoir besoin d'être connecté à un serveur central distant. </p>
+            </div>
+    </section> 
+    <section class="projects" id="projects">
+        <h2 class="title">Liens</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./code.png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">lien de Git</p>
+                    <strong class="project-title">
+                        <span>Git</span>
+                        <a href="https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git" class="more-details" target="_blank">lien </a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./github .png" />
+                </div>
+                <div class="project-info">
+                    <p class="project-category">lien de Github</p>
+                    <strong class="project-title">
+                        <span>Github</span>
+                        <a href="https://github.com/" class="more-details" target="_blank">Lien</a>
+                    </strong>
+                </div>
+            </div>
+
+
+            <section class="cards Binome" id="Binome">
+                <h2 class="title">Binome</h2>
+                <div class="Binome">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-solid fa-user"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Chabane Mohamed fares</h3>
+                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fas fa-solid fa-user"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Dif Areslan</h3>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+</body>
+</html>

@@ -1,0 +1,243 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #081b29;
+  font-family: "poppins";
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  list-style: none;
+  bottom: 50px;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+.nav * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a {
+  position: relative;
+  color: rgba(205, 207, 205, 0.5);
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.nav a:before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #00abf0;
+  border-top: 3px solid #00abf0;
+  -webkit-transform: translate(-100%, 50%);
+  transform: translate(-100%, 50%);
+}
+.nav a:after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #00abf0;
+  border-bottom: 3px solid #00abf0;
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+}
+.nav a:hover:before,
+.nav a:hover:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+.title1,
+.title3,
+.title2,
+.title4 {
+  font-size: 30px;
+  font-weight: 600;
+  animation: lights 5s 750ms linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title1 {
+  width: 250px;
+  letter-spacing: 12px;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+.box1 > img {
+  border-radius: 50%;
+}
+.box1 {
+  margin: 50px;
+}
+.us {
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_name {
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 4s linear infinite;
+  position: relative;
+}
+.name {
+  color: #00abf0;
+}
+.title2 {
+  width: 600px;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+.title3,
+.title4 {
+  letter-spacing: 5px;
+  font-size: 23px;
+}
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  width: 1000px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #ededed;
+  color: #ededed;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.sous_titre {
+  color: #00abf0;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.paragraph1 > img {
+  position: relative;
+  left: 350px;
+  height: 300px;
+  width: 300px;
+}
+.man1,
+.man2,
+.wan,
+.Réseaux1,
+.server1,
+.server2,
+.bus {
+  height: 300px;
+  width: 300px;
+}
+.man1,
+.server1 {
+  margin-top: 20px;
+  margin-right: 150px;
+}
+.wan,
+.Réseaux1,
+.Réseaux2,
+.bus {
+  position: relative;
+  left: 310px;
+}
+.server1 {
+  margin-left: 100px;
+}
+.informations {
+  color: gray;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
