@@ -1,6 +1,5 @@
-body{
+body {
   background-color: #252525;
-  
 }
 .class2 {
   font-family: "Arial", sans-serif;
@@ -11,7 +10,68 @@ body{
   width: fit-content;
   height: fit-content;
 }
-
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  list-style: none;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+.nav * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a {
+  position: relative;
+  color: rgba(205, 207, 205, 0.5);
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.nav a:before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid #00abf0;
+  border-top: 3px solid #00abf0;
+  -webkit-transform: translate(-100%, 50%);
+  transform: translate(-100%, 50%);
+}
+.nav a:after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #00abf0;
+  border-bottom: 3px solid #00abf0;
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+}
+.nav a:hover:before,
+.nav a:hover:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
 button {
   position: relative;
   padding: 10px 20px;
@@ -47,7 +107,7 @@ button:hover::before {
 }
 
 button::before {
-  content: '';
+  content: "";
   display: block;
   width: 0px;
   height: 86%;
@@ -86,3 +146,4 @@ button:active {
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
 }
+
